@@ -32,7 +32,7 @@ const HeaderBottom = () => {
       <p className='headerHover p-2'>Shop great deals now</p>
       {sideNav && (
       <div className='w-full h-screen fixed top-0 left-0 bg-black bg-opacity-80'>
-        <motion.div ref={ref} initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.3}} className='w-[370px] h-full relative text-black bg-white'>
+        <motion.div ref={ref} initial={{x:-500, opacity:0}} animate={{x:0, opacity:1}} transition={{duration:.3}} className='w-[370px] h-full relative text-black bg-white z-50'>
             <div className='w-full h-[3.2rem] bg-[#1e2f3e] text-white text-lg font-bold flex items-center justify-start gap-2 pl-9'>
             <AccountCircleIcon/> <p>Hello, sign in</p>
             </div>

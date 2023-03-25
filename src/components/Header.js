@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <div>
      
-<div className='w-full text-white bg-[#111921] px-2 py-1 flex items-center gap-3'>
+<div className='w-full text-white bg-[#111921] px-2 py-1 flex items-center gap-3 relative z-100'>
    <div className='headerHover'>
    <img src={Logo} alt="" className='w-[90px]'/>
    </div>
