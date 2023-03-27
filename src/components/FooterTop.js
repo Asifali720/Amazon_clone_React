@@ -1,6 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
+import FooterMiddle from './FooterMiddle';
 
 const FooterTop = () => {
+  const [visible, setVisible] = useState(false)
+
+  
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300){
+      setVisible(true)
+    } 
+    else if (scrolled <= 300){
+      setVisible(false)
+    }
+  };
+  
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+      /* you can also use 'auto' behaviour
+         in place of 'smooth' */
+    })
+  }
+  window.addEventListener('scroll', toggleVisible); 
   return (
     <div className='w-full bg-white mt-[43%] pt-6 pb-4'>
       <div className='w-full border-[1px] border-gray-300 rounded-sm pt-6 pb-4 flex flex-col space-y-1 items-center justify-center'>
@@ -9,8 +32,9 @@ const FooterTop = () => {
         <p className='text-xs text-black cursor-pointer'>New customer? <span className=' text-green-400 hover:text-orange-400'>Start here.</span></p>
       </div>
       <div className='w-full text-center text-white font-semibold bg-slate-700 py-3 hover:bg-slate-500 cursor-pointer'>
-        <p>Back to top</p>
+        <p onClick={scrollToTop}>Back to top</p>
       </div>
+      <FooterMiddle/>
     </div>
   )
 }

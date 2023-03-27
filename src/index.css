@@ -9,4 +9,7 @@
   .listHover{
     @apply text-[#111921] px-1 hover:bg-blue-500 hover:text-white
   }
+  .footerLink{
+    @apply text-sm hover:underline cursor-pointer
+  }
 }
