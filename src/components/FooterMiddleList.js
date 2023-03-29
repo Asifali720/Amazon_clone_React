@@ -1,15 +1,15 @@
 import React from 'react'
 
-const FooterMiddleList = () => {
+const FooterMiddleList = ({title, listItems}) => {
   return (
     <div>
-       <h3 className=' text-lg font-semibold'>title</h3>
+       <h3 className=' text-lg font-semibold'>{title}</h3>
         <ul>
-          <li className='footerLink'>items</li>
-          <li className='footerLink'>items</li>
-          <li className='footerLink'>items</li>
-          <li className='footerLink'>items</li>
-          <li className='footerLink'>items</li>
+          {
+            listItems.map((item)=>item.listData.map((data)=>{
+              <li className='footerLink'>{data}</li>
+            }))
+          }
         </ul>
     </div>
   )
