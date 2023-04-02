@@ -1,5 +1,9 @@
 import React from 'react'
 import FooterMiddleList from './FooterMiddleList'
+import Logo from '../assets/Amazon-Logo.png'
+import LanguageIcon from '@mui/icons-material/Language';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 
 const FooterMiddle = () => {
   const arr = [
@@ -72,7 +76,7 @@ const FooterMiddle = () => {
     }
   ]
   return (
-    <div className=' w-full bg-[#1e2f3e] text-white'>
+    <div className=' w-full bg-[#1e2f3e] text-white py-8'>
       <div className=' w-full py-10 border-b-[1px] border-slate-300'>
         <div className=' max-w-5xl mx-auto'>
           <div className='w-full grid grid-cols-4 place-items-center items-start'>
@@ -81,6 +85,31 @@ const FooterMiddle = () => {
                 <FooterMiddleList key={node._id} title={node.title} listItems={node.listItems} />
               ))
             }
+          </div>
+        </div>
+      </div>
+      <div className=' mx-12 min-h-[68px] my-[10px] py-2 flex items-center justify-center gap-[70px]'>
+        <div className=' px-2'>
+          <img src={Logo} alt="" className=' w-[76px]'/>
+        </div>
+        <div className='flex gap-2'>
+          <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 rounded py-2 px-2'>
+            <div className=' w-4'>
+            <LanguageIcon/>
+            </div>
+            <p className=' text-sm'>English <ArrowDropDownIcon/></p>
+          </div>
+          <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 rounded py-2 px-2'>
+            <div className=' w-4'>
+            <AttachMoneyOutlinedIcon/>
+            </div>
+            <p className=' text-sm'>USD - U.S. Dollar</p>
+          </div>
+          <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 rounded py-2 px-2'>
+            <div className=' w-4'>
+            <LanguageIcon/>
+            </div>
+            <p className=' text-sm'>English <ArrowDropDownIcon/></p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import FooterMiddle from './FooterMiddle';
+import FooterBottom from './FooterBottom';
 
 const FooterTop = () => {
   const [visible, setVisible] = useState(false)
@@ -35,6 +36,7 @@ const FooterTop = () => {
         <p onClick={scrollToTop}>Back to top</p>
       </div>
       <FooterMiddle/>
+      <FooterBottom/>
     </div>
   )
 }
