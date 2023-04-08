@@ -4,6 +4,7 @@ import Logo from '../assets/Amazon-Logo.png'
 import LanguageIcon from '@mui/icons-material/Language';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
+import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto';
 
 const FooterMiddle = () => {
   const arr = [
@@ -107,9 +108,9 @@ const FooterMiddle = () => {
           </div>
           <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 rounded py-2 px-2'>
             <div className=' w-4'>
-            <LanguageIcon/>
+            <AssistantPhotoIcon />
             </div>
-            <p className=' text-sm'>English <ArrowDropDownIcon/></p>
+            <p className=' text-sm'>United State</p>
           </div>
         </div>
       </div>

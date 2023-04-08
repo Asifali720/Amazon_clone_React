@@ -7,7 +7,7 @@ const FooterMiddleList = ({title, listItems}) => {
         <ul>
           {
             listItems.map((item)=>item.listData.map((data)=>(
-              <li className='footerLink py-1'>{data}</li>
+              <li className='footerLink text-sm py-1'>{data}</li>
             )))
           }
         </ul>
