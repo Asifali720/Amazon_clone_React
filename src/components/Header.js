@@ -40,7 +40,7 @@ const Header = () => {
         {_id:127,title:"Women's Fashion"},
     ]
   return (
-    <div>
+    <div className='w-full sticky top-0'>
      
 <div className='w-full text-white bg-[#111921] px-2 py-1 flex items-center gap-3 relative z-100'>
    <div className='headerHover'>
