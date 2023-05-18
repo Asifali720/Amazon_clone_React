@@ -26,7 +26,7 @@ const FooterTop = () => {
   }
   window.addEventListener('scroll', toggleVisible); 
   return (
-    <div className='w-full bg-white mt-[43%] pt-6'>
+    <div className='w-full bg-white mt-10 pt-6'>
       <div className='w-full border-[1px] border-gray-300 rounded-sm pt-6 flex flex-col space-y-1 items-center justify-center'>
         <p className=' text-sm'>See personalized recommendations</p>
         <button className='bg-yellow-400 text-sm font-bold py-1 px-16 rounded-md border-[1px] border-orange-500 hover:bg-yellow-300 cursor-pointer'>Sign in</button>
