@@ -106,7 +106,7 @@ const FooterMiddle = () => {
             </div>
             <p className=' text-sm'>USD - U.S. Dollar</p>
           </div>
-          <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 cursor-pointer hover:border-slate-100 cursor-pointer rounded py-2 px-2'>
+          <div className='flex items-center justify-center gap-3 border-[1px] border-slate-400 cursor-pointer hover:border-slate-100 rounded py-2 px-2'>
             <div className=' w-4'>
             <AssistantPhotoIcon />
             </div>
